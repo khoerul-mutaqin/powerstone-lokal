@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">    
+
+    <record id="paperformat_a4_without_header" model="report.paperformat">
+        <field name="name">A4 without header</field>
+        <field name="default" eval="True"/>
+        <field name="dpi">90</field>
+        <field name="format">A4</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">0</field>
+        <field name="margin_bottom">32</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+    </record>
+
+    <!-- 1. Print Out Mrp Production -->
+    <record id="action_report_mrp_custom" model="ir.actions.report">
+        <field name="name">工单涂覆进度表 (PDF)</field>
+        <field name="model">mrp.production</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">cdp_mrp_report.report_mrp_production</field>
+        <field name="report_file">cdp_mrp_report.report_mrp_production</field>
+        <field name="print_report_name">'%s' % object.name</field>
+        <field name="binding_model_id"  ref="mrp.model_mrp_production" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="cdp_mrp_report.paperformat_a4_without_header" />          
+    </record>
+
+
+</data>
+</odoo>

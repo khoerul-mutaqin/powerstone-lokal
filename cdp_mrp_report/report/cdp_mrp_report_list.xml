@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="report_mrp_in_excel" model="ir.actions.report">
+        <field name="name">工单涂覆进度表 (Excel)</field>
+        <field name="model">mrp.production</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">cdp_mrp_report.cdp_mrp_report_list</field>
+        <field name="report_file">cdp_mrp_report.cdp_mrp_report_list</field>
+        <field name="print_report_name">'涂覆进度表新 - %s' % object.name</field>
+        <field name="binding_model_id" ref="mrp.model_mrp_production" />
+        <field name="binding_type">report</field>
+    </record>
+
+
+</odoo>
