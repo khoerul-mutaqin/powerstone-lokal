@@ -31,7 +31,7 @@
                                             border: 1px solid #000;
                                             text-align: left;
                                             vertical-align: middle;
-                                            font-size: 26px;
+                                            font-size: 20px;
                                             color: #2F75B5;
                         
                                         }
@@ -40,7 +40,7 @@
                                             border: 1px solid #000;
                                             text-align: center;
                                             vertical-align: middle;
-                                            font-size: 26px;
+                                            font-size: 20px;
                                             color: #2F75B5;
                         
                                         }
@@ -49,7 +49,7 @@
                                             border: 1px solid #000;
                                             text-align: center;
                                             vertical-align: middle;
-                                            font-size: 26px;
+                                            font-size: 20px;
                                             color: #2F75B5;
                                             background-color: #FCE4D6 !important;
                         
@@ -84,300 +84,307 @@
                     </style>
                     <!-- MRP Details Table -->
                     <table class="table" width="100%" style="margin-top:20px">
-                        <tr>
-                            <td colspan="31" class="center-header">
-                                <strong>工单涂覆进度表</strong>
-                            </td>
-                        </tr>
-                        <!--setion 2-->
-                        <tr>
-                            <td colspan="3" class="left">
-                                <strong>订单号：</strong>
-                            </td>
-                            <td colspan="6" class="center-header-orange" style="white-space: nowrap;">
-                                <strong>
-                                    <t t-esc="source"/>
-                                </strong>
-                            </td>
-                            <td colspan="3" class="left" style="white-space: nowrap;">
-                                <strong>工单编号:</strong>
-                            </td>
-                            <td colspan="5" class="center-header-orange">
-                                <strong>
-                                    <t t-esc="mo_number"/>
-                                </strong>
-                            </td>
-                            <td colspan="2" class="center-header" style="white-space: nowrap;">
-                                <strong>产品名称:</strong>
-                            </td>
-                            <td colspan="6" class="center-header-orange" style="white-space: nowrap;">
-                                <strong>
-                                    <t t-esc="product_name"/>
-                                </strong>
-                            </td>
-                            <td colspan="1" class="left" style="white-space: nowrap;">
-                                <strong>数量:</strong>
-                            </td>
-                            <td colspan="2" class="center-header-orange">
-                                <strong>
-                                    <t t-esc="print_quantity"/>
-                                </strong>
-                            </td>
-                            <td colspan="2" class="left" style="white-space: nowrap;">
-                                <strong>批次号:</strong>
-                            </td>
-                            <td class="left">
-                                <strong/>
-                            </td>
-                        </tr>
-                        <!--section 3-->
-                        <tr>
-                            <td colspan="8" class="center-header">
-                                <strong>产品涂覆指导</strong>
-                            </td>
-                            <td colspan="15" class="center-header">
-                                <strong>涂覆班组填写</strong>
-                            </td>
-                            <td colspan="5" class="center-header">
-                                <strong>烧结员工填写</strong>
-                            </td>
-                            <td colspan="2" class="left">
-                                <strong>料架号:</strong>
-                            </td>
-                            <td class="left">
-                                <strong/>
-                            </td>
-                        </tr>
-                        <!--section 4-->
-                        <tr>
-                            <!-- A - P (rowspan 3) -->
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>层数</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>涂液代码</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>烧结程序</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>涂层位置</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>涂覆面</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>单片面积(m2)</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>单片指导用量</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-orange-16">
-                                <strong>单层涂液用量</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>涂覆日期</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>涂覆班次</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>涂覆组</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>涂覆人数</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>辅助人数</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>涂覆开始时间</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>涂覆结束时间</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>计划烧结开始时间</strong>
-                            </td>
-                            <!-- Q - U -->
-                            <td colspan="5" class="center-header-gray-16">
-                                <strong>姓名/数量</strong>
-                            </td>
-                            <!-- V - AB -->
-                            <td rowspan="3" class="center-header-gray-16">
-                                <strong>总工时</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-gray-16">
-                                <strong>人效(m2/人/时)</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>当班架次</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>烧结程序</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>计划烧结开始时间</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>实际烧结开始时间</strong>
-                            </td>
-                            <td rowspan="3" class="center-header-16">
-                                <strong>实际烧结结束时间</strong>
-                            </td>
-                            <!-- AC - AE -->
-                            <td colspan="3" rowspan="2" class="center-header-16">
-                                <strong>备注</strong>
-                            </td>
-                        </tr>
-                        <!-- ROW 2 -->
-                        <tr>
-                            <!-- Q - U breakdown -->
-                            <td colspan="3" class="center-header-gray-16">
-                                <strong>涂覆作业员</strong>
-                            </td>
-                            <td colspan="2" class="center-header-gray-16">
-                                <strong>辅助作业员</strong>
-                            </td>
-                        </tr>
-                        <!-- ROW 3 -->
-                        <tr>
-                            <!-- Q - U detail -->
-                            <td class="center-header-gray-16">
-                                <strong>A</strong>
-                            </td>
-                            <td class="center-header-gray-16">
-                                <strong>B</strong>
-                            </td>
-                            <td class="center-header-gray-16">
-                                <strong>C</strong>
-                            </td>
-                            <td class="center-header-gray-16">
-                                <strong>D</strong>
-                            </td>
-                            <td class="center-header-gray-16">
-                                <strong>E</strong>
-                            </td>
-                            <!-- AC - AE detail -->
-                            <td class="center-header-16">
-                                <strong>料架号变更</strong>
-                            </td>
-                            <td class="center-header-16">
-                                <strong>数量变更</strong>
-                            </td>
-                            <td class="center-header-16">
-                                <strong>异常备注</strong>
-                            </td>
-                        </tr>
-                        <!-- Section line -->
-                        <t t-set="lines" t-value="o.product_tmpl_id.x_studio_dn_line"/>
-                        <t t-foreach="range(50)" t-as="i">
-                            <t t-if="i &lt; len(lines)">
-                                <t t-set="l" t-value="lines[i]"/>
-                            </t>
-                            <t t-else="">
-                                <t t-set="l" t-value="False"/>
-                            </t>
+                        <thead>
                             <tr>
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="i + 1"/>
-                                </td>
-                                <!-- ORANGE (kolom 1–7) -->
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="l.x_studio_coat.name if l and l.x_studio_coat else ''"/>
-                                </td>
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="l.x_studio_sintering_procedure_1 if l else ''"/>
-                                </td>
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="l.x_studio_coating_position if l else ''"/>
-                                </td>
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="l.x_studio_coating_layer_1 if l else ''"/>
-                                </td>
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="l.x_studio_coat_area.x_studio_coat_area if l and l.x_studio_coat_area else ''"/>
-                                </td>
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="l.x_studio_single_layer_coating_amount if l and l.x_studio_single_layer_coating_amount else ''"/>
-                                </td>
-                                <td class="center-header-16" style="background-color: #FCE4D6 !important;">
-                                    <t t-esc="l.x_studio_coat_area.x_studio_coat_area * l.x_studio_single_layer_coating_amount if l and l.x_studio_single_layer_coating_amount and l.x_studio_coat_area else ''"/>
-                                </td>
-                                <!-- NORMAL -->
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <!-- A - E -->
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <!-- RESULT -->
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
-                                </td>
-                                <td class="center-header-16">
-                                    <t t-esc="''"/>
+                                <td colspan="31" class="center-header">
+                                    <strong>工单涂覆进度表</strong>
                                 </td>
                             </tr>
-                        </t>
+                            <!--setion 2-->
+                            <tr>
+                                <td colspan="3" class="left" style="white-space: nowrap;">
+                                    <strong>订单号：</strong>
+                                </td>
+                                <td colspan="6" class="center-header-orange" style="white-space: nowrap;">
+                                    <strong>
+                                        <t t-esc="source"/>
+                                    </strong>
+                                </td>
+                                <td colspan="3" class="left" style="white-space: nowrap;">
+                                    <strong>工单编号:</strong>
+                                </td>
+                                <td colspan="5" class="center-header-orange">
+                                    <strong>
+                                        <t t-esc="mo_number"/>
+                                    </strong>
+                                </td>
+                                <td colspan="2" class="center-header" style="white-space: nowrap;">
+                                    <strong>产品名称:</strong>
+                                </td>
+                                <td colspan="6" class="center-header-orange" style="white-space: nowrap;">
+                                    <strong>
+                                        <t t-esc="product_name"/>
+                                    </strong>
+                                </td>
+                                <td colspan="1" class="left" style="white-space: nowrap;">
+                                    <strong>数量:</strong>
+                                </td>
+                                <td colspan="2" class="center-header-orange">
+                                    <strong>
+                                        <t t-esc="print_quantity"/>
+                                    </strong>
+                                </td>
+                                <td colspan="2" class="left" style="white-space: nowrap;">
+                                    <strong>批次号:</strong>
+                                </td>
+                                <td class="left">
+                                    <strong/>
+                                </td>
+                            </tr>
+                            <!--section 3-->
+                            <tr>
+                                <td colspan="8" class="center-header">
+                                    <strong>产品涂覆指导</strong>
+                                </td>
+                                <td colspan="15" class="center-header">
+                                    <strong>涂覆班组填写</strong>
+                                </td>
+                                <td colspan="5" class="center-header">
+                                    <strong>烧结员工填写</strong>
+                                </td>
+                                <td colspan="2" class="left">
+                                    <strong>料架号:</strong>
+                                </td>
+                                <td class="left">
+                                    <strong/>
+                                </td>
+                            </tr>
+                            <!--section 4-->
+                            <tr>
+                                <!--A - P (rowspan 3) -->
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>层数</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>涂液代码</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>烧结程序</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>涂层位置</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>涂覆面</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>单片面积(m2)</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>单片指导用量</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-orange-16">
+                                    <strong>单层涂液用量</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>涂覆日期</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>涂覆班次</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>涂覆组</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>涂覆人数</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>辅助人数</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>涂覆开始时间</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>涂覆结束时间</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>计划烧结开始时间</strong>
+                                </td>
+                                <!--Q - U -->
+                                <td colspan="5" class="center-header-gray-16">
+                                    <strong>姓名/数量</strong>
+                                </td>
+                                <!--V - AB -->
+                                <td rowspan="3" class="center-header-gray-16">
+                                    <strong>总工时</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-gray-16">
+                                    <strong>人效(m2/人/时)</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>当班架次</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>烧结程序</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>计划烧结开始时间</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>实际烧结开始时间</strong>
+                                </td>
+                                <td rowspan="3" class="center-header-16">
+                                    <strong>实际烧结结束时间</strong>
+                                </td>
+                                <!--AC - AE -->
+                                <td colspan="3" rowspan="2" class="center-header-16">
+                                    <strong>备注</strong>
+                                </td>
+                            </tr>
+                            <!--ROW 2 -->
+                            <tr>
+                                <!--Q - U breakdown -->
+                                <td colspan="3" class="center-header-gray-16">
+                                    <strong>涂覆作业员</strong>
+                                </td>
+                                <td colspan="2" class="center-header-gray-16">
+                                    <strong>辅助作业员</strong>
+                                </td>
+                            </tr>
+                            <!--ROW 3 -->
+                            <tr>
+                                <!--Q - U detail -->
+                                <td class="center-header-gray-16">
+                                    <strong>A</strong>
+                                </td>
+                                <td class="center-header-gray-16">
+                                    <strong>B</strong>
+                                </td>
+                                <td class="center-header-gray-16">
+                                    <strong>C</strong>
+                                </td>
+                                <td class="center-header-gray-16">
+                                    <strong>D</strong>
+                                </td>
+                                <td class="center-header-gray-16">
+                                    <strong>E</strong>
+                                </td>
+                                <!--AC - AE detail -->
+                                <td class="center-header-16">
+                                    <strong>料架号变更</strong>
+                                </td>
+                                <td class="center-header-16">
+                                    <strong>数量变更</strong>
+                                </td>
+                                <td class="center-header-16">
+                                    <strong>异常备注</strong>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Section line -->
+                            <t t-set="lines" t-value="o.product_tmpl_id.x_studio_dn_line"/>
+                            <t t-foreach="range(50)" t-as="i">
+                                <t t-if="i &lt; len(lines)">
+                                    <t t-set="l" t-value="lines[i]"/>
+                                </t>
+                                <t t-else="">
+                                    <t t-set="l" t-value="False"/>
+                                </t>
+                                <tr>
+                                    <td class="center-header-16">
+                                        <t t-esc="i + 1"/>
+                                    </td>
+                                    <!-- ORANGE (kolom 1–7) -->
+                                    <td class="center-header-16">
+                                        <t t-esc="l.x_studio_coat.name if l and l.x_studio_coat else ''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="l.x_studio_sintering_procedure_1 if l else ''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="l.x_studio_coating_position if l else ''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="l.x_studio_coating_layer_1 if l else ''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <!--<t t-esc="l.x_studio_coat_area.x_studio_coat_area if l and l.x_studio_coat_area else ''"/>-->
+                                        <t t-esc="'%.6f' % l.x_studio_coat_area.x_studio_coat_area if (l and l.x_studio_coat_area) else ''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="'%.6f' % l.x_studio_single_layer_coating_amount if (l and l.x_studio_single_layer_coating_amount) else ''"/>
+                                        <!--<t t-esc="l.x_studio_single_layer_coating_amount if l and l.x_studio_single_layer_coating_amount else ''"/>-->
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="'%.6f' % (     l.x_studio_coat_area.x_studio_coat_area *     l.x_studio_single_layer_coating_amount ) if (l and l.x_studio_coat_area and l.x_studio_single_layer_coating_amount) else ''"/>
+                                        <!--<t t-esc="l.x_studio_coat_area.x_studio_coat_area * l.x_studio_single_layer_coating_amount if l and l.x_studio_single_layer_coating_amount and l.x_studio_coat_area else ''"/>-->
+                                    </td>
+                                    <!-- NORMAL -->
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <!-- A - E -->
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <!-- RESULT -->
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                    <td class="center-header-16">
+                                        <t t-esc="''"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
                     </table>
                 </t>
             </t>
