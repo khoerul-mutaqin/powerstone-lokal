@@ -10,6 +10,12 @@
                     <t t-set="product_name" t-value="o.product_id.name"/>
                     <t t-set="print_quantity" t-value="o.x_studio_print_quantity"/>
                     <style>
+                                    td, th {
+                                      padding: 6px 3px !important;   /* ini yang bikin tinggi naik */
+                                      line-height: 12px !important;
+                                      height: 18px;                 /* optional fixed height */
+                                      vertical-align: middle !important;
+                                    }
                                     table {
                                         border-collapse: collapse !important;
                                         border-spacing: 0 !important;
@@ -25,13 +31,21 @@
                                     body {
                                         font-family: "Noto Sans CJK SC", "SimSun", "Microsoft YaHei", sans-serif;
                                     }
-                    
+                                        .center-header-top {
+                                            font-weight: bold;
+                                            border: 1px solid #000;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            font-size: 24px;
+                                            color: #2F75B5;
+                        
+                                        }
                                         .left {
                                             font-weight: bold;
                                             border: 1px solid #000;
                                             text-align: left;
                                             vertical-align: middle;
-                                            font-size: 20px;
+                                            font-size: 12px;
                                             color: #2F75B5;
                         
                                         }
@@ -40,7 +54,7 @@
                                             border: 1px solid #000;
                                             text-align: center;
                                             vertical-align: middle;
-                                            font-size: 20px;
+                                            font-size: 12px;
                                             color: #2F75B5;
                         
                                         }
@@ -49,36 +63,36 @@
                                             border: 1px solid #000;
                                             text-align: center;
                                             vertical-align: middle;
-                                            font-size: 20px;
+                                            font-size: 12px;
                                             color: #2F75B5;
                                             background-color: #FCE4D6 !important;
                         
                                         }
-                                        .center-header-orange-16 {
+                                        .center-header-orange-9 {
                                             font-weight: bold;
                                             border: 1px solid #000;
                                             text-align: center;
                                             vertical-align: middle;
-                                            font-size: 16px;
+                                            font-size: 9px;
                                             color: #2F75B5;
                                             background-color: #FCE4D6 !important;
                         
                                         }
-                                        .center-header-gray-16 {
+                                        .center-header-gray-9 {
                                             font-weight: bold;
                                             border: 1px solid #000;
                                             text-align: center;
                                             vertical-align: middle;
-                                            font-size: 16px;
+                                            font-size: 9px;
                                             color: #2F75B5;
                                             background-color: #D0CECE !important;
                                         }
-                                        .center-header-16 {
+                                        .center-header-9 {
                                             font-weight: bold;
                                             border: 1px solid #000;
                                             text-align: center;
                                             vertical-align: middle;
-                                            font-size: 16px;
+                                            font-size: 9px;
                                             color: #2F75B5;
                                         }
                     </style>
@@ -86,13 +100,13 @@
                     <table class="table" width="100%" style="margin-top:20px">
                         <thead>
                             <tr>
-                                <td colspan="31" class="center-header">
+                                <td colspan="31" class="center-header-top" style="line-height: 20px !important;  padding: 42px 23px !important;   /* ini yang bikin tinggi naik */">
                                     <strong>工单涂覆进度表</strong>
                                 </td>
                             </tr>
                             <!--setion 2-->
                             <tr>
-                                <td colspan="3" class="left" style="white-space: nowrap;">
+                                <td colspan="3" class="left" style="white-space: nowrap">
                                     <strong>订单号：</strong>
                                 </td>
                                 <td colspan="6" class="center-header-orange" style="white-space: nowrap;">
@@ -152,121 +166,121 @@
                             <!--section 4-->
                             <tr>
                                 <!--A - P (rowspan 3) -->
-                                <td rowspan="3" class="center-header-orange-16">
+                                <td rowspan="3" class="center-header-orange-9">
                                     <strong>层数</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-orange-16">
-                                    <strong>涂液代码</strong>
+                                <td rowspan="3" class="center-header-orange-9">
+                                    <strong>涂液<br/>代码</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-orange-16">
-                                    <strong>烧结程序</strong>
+                                <td rowspan="3" class="center-header-orange-9">
+                                    <strong>烧结<br/>程序</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-orange-16">
-                                    <strong>涂层位置</strong>
+                                <td rowspan="3" class="center-header-orange-9">
+                                    <strong>涂层<br/>位置</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-orange-16">
+                                <td rowspan="3" class="center-header-orange-9">
                                     <strong>涂覆面</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-orange-16">
-                                    <strong>单片面积(m2)</strong>
+                                <td rowspan="3" class="center-header-orange-9">
+                                    <strong>单片<br/>面积<br/>(m2)</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-orange-16">
-                                    <strong>单片指导用量</strong>
+                                <td rowspan="3" class="center-header-orange-9">
+                                    <strong>单片指<br/>导用量</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-orange-16">
-                                    <strong>单层涂液用量</strong>
+                                <td rowspan="3" class="center-header-orange-9">
+                                    <strong>单层涂<br/>液用量</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>涂覆日期</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>涂覆<br/>日期</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>涂覆班次</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>涂覆<br/>班次</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
+                                <td rowspan="3" class="center-header-9">
                                     <strong>涂覆组</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>涂覆人数</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>涂覆<br/>人数</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>辅助人数</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>辅助<br/>人数</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>涂覆开始时间</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>涂覆<br/>开始时间</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>涂覆结束时间</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>涂覆<br/>结束时间</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>计划烧结开始时间</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>计划烧结<br/>开始时间</strong>
                                 </td>
                                 <!--Q - U -->
-                                <td colspan="5" class="center-header-gray-16">
+                                <td colspan="5" class="center-header-gray-9">
                                     <strong>姓名/数量</strong>
                                 </td>
                                 <!--V - AB -->
-                                <td rowspan="3" class="center-header-gray-16">
+                                <td rowspan="3" class="center-header-gray-9">
                                     <strong>总工时</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-gray-16">
-                                    <strong>人效(m2/人/时)</strong>
+                                <td rowspan="3" class="center-header-gray-9">
+                                    <strong>人效<br/>(m2/人/时)</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>当班架次</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>当班<br/>架次</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>烧结程序</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>烧结<br/>程序</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>计划烧结开始时间</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>计划烧结<br/>开始时间</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>实际烧结开始时间</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>实际烧结<br/>开始时间</strong>
                                 </td>
-                                <td rowspan="3" class="center-header-16">
-                                    <strong>实际烧结结束时间</strong>
+                                <td rowspan="3" class="center-header-9">
+                                    <strong>实际烧结<br/>结束时间</strong>
                                 </td>
                                 <!--AC - AE -->
-                                <td colspan="3" rowspan="2" class="center-header-16">
+                                <td colspan="3" rowspan="2" class="center-header-9">
                                     <strong>备注</strong>
                                 </td>
                             </tr>
                             <!--ROW 2 -->
                             <tr>
                                 <!--Q - U breakdown -->
-                                <td colspan="3" class="center-header-gray-16">
+                                <td colspan="3" class="center-header-gray-9">
                                     <strong>涂覆作业员</strong>
                                 </td>
-                                <td colspan="2" class="center-header-gray-16">
+                                <td colspan="2" class="center-header-gray-9">
                                     <strong>辅助作业员</strong>
                                 </td>
                             </tr>
                             <!--ROW 3 -->
                             <tr>
                                 <!--Q - U detail -->
-                                <td class="center-header-gray-16">
+                                <td class="center-header-gray-9" style="width:40px; min-width:40px; white-space: nowrap;">
                                     <strong>A</strong>
                                 </td>
-                                <td class="center-header-gray-16">
+                                <td class="center-header-gray-9" style="width:40px; min-width:40px; white-space: nowrap;">
                                     <strong>B</strong>
                                 </td>
-                                <td class="center-header-gray-16">
+                                <td class="center-header-gray-9" style="width:40px; min-width:40px; white-space: nowrap;">
                                     <strong>C</strong>
                                 </td>
-                                <td class="center-header-gray-16">
+                                <td class="center-header-gray-9" style="width:40px; min-width:40px; white-space: nowrap;">
                                     <strong>D</strong>
                                 </td>
-                                <td class="center-header-gray-16">
+                                <td class="center-header-gray-9" style="width:40px; min-width:40px; white-space: nowrap;">
                                     <strong>E</strong>
                                 </td>
                                 <!--AC - AE detail -->
-                                <td class="center-header-16">
-                                    <strong>料架号变更</strong>
+                                <td class="center-header-9">
+                                    <strong>料架号<br/>变更</strong>
                                 </td>
-                                <td class="center-header-16">
-                                    <strong>数量变更</strong>
+                                <td class="center-header-9">
+                                    <strong>数量<br/>变更</strong>
                                 </td>
-                                <td class="center-header-16">
+                                <td class="center-header-9">
                                     <strong>异常备注</strong>
                                 </td>
                             </tr>
@@ -282,104 +296,109 @@
                                     <t t-set="l" t-value="False"/>
                                 </t>
                                 <tr>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="i + 1"/>
                                     </td>
                                     <!-- ORANGE (kolom 1–7) -->
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="l.x_studio_coat.name if l and l.x_studio_coat else ''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="l.x_studio_sintering_procedure_1 if l else ''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="l.x_studio_coating_position if l else ''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="l.x_studio_coating_layer_1 if l else ''"/>
                                     </td>
-                                    <td class="center-header-16">
-                                        <!--<t t-esc="l.x_studio_coat_area.x_studio_coat_area if l and l.x_studio_coat_area else ''"/>-->
-                                        <t t-esc="'%.6f' % l.x_studio_coat_area.x_studio_coat_area if (l and l.x_studio_coat_area) else ''"/>
+                                    <td class="center-header-9">
+                                        <t t-set="val1" t-value="round(float(l.x_studio_coat_area.x_studio_coat_area or 0), 3) if (l and l.x_studio_coat_area and l.x_studio_coat_area.x_studio_coat_area) else ''"/>
+                                        <t t-esc="val1"/>
                                     </td>
-                                    <td class="center-header-16">
-                                        <t t-esc="'%.6f' % l.x_studio_single_layer_coating_amount if (l and l.x_studio_single_layer_coating_amount) else ''"/>
-                                        <!--<t t-esc="l.x_studio_single_layer_coating_amount if l and l.x_studio_single_layer_coating_amount else ''"/>-->
+                                    <td class="center-header-9">
+                                        <t t-set="val2" t-value="round(float(l.x_studio_single_layer_coating_amount or 0), 3) if (l and l.x_studio_single_layer_coating_amount) else ''"/>
+                                        <t t-esc="val2"/>
                                     </td>
-                                    <td class="center-header-16">
-                                        <t t-esc="'%.6f' % (     l.x_studio_coat_area.x_studio_coat_area *     l.x_studio_single_layer_coating_amount ) if (l and l.x_studio_coat_area and l.x_studio_single_layer_coating_amount) else ''"/>
-                                        <!--<t t-esc="l.x_studio_coat_area.x_studio_coat_area * l.x_studio_single_layer_coating_amount if l and l.x_studio_single_layer_coating_amount and l.x_studio_coat_area else ''"/>-->
+                                    <td class="center-header-9">
+                                      <t t-set="ratio" t-value="0"/>
+                                      <t t-if="val1">
+                                          <t t-set="ratio" t-value="val2 / val1"/>
+                                      </t>
+                                      <t t-if="ratio &gt; 0">
+                                        <t t-esc="round(ratio, 3)"/>
+                                      </t>
                                     </td>
                                     <!-- NORMAL -->
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
                                     <!-- A - E -->
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
                                     <!-- RESULT -->
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
-                                    <td class="center-header-16">
+                                    <td class="center-header-9">
                                         <t t-esc="''"/>
                                     </td>
                                 </tr>
