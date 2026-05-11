@@ -2,18 +2,19 @@
 <odoo>
 <data noupdate="0">    
 
-    <record id="paperformat_a4_without_header" model="report.paperformat">
-        <field name="name">A4 without header</field>
+    <record id="cds_paperformat_a4_custom" model="report.paperformat">
+        <field name="name">A4 Landscape Custom</field>
         <field name="default" eval="True"/>
         <field name="dpi">90</field>
         <field name="format">A4</field>
         <field name="orientation">Landscape</field>
-        <field name="margin_top">0</field>
+        <field name="margin_top">7</field>
         <field name="margin_bottom">0</field>
-        <field name="margin_left">0</field>
-        <field name="margin_right">0</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
         <field name="page_height">0</field>
         <field name="page_width">0</field>
+        <field name="header_spacing">24</field>
     </record>
 
     <!-- 1. Print Out Mrp Production -->
@@ -26,7 +27,7 @@
         <field name="print_report_name">'%s' % object.name</field>
         <field name="binding_model_id"  ref="mrp.model_mrp_production" />
         <field name="binding_type">report</field>
-        <field name="paperformat_id" ref="cdp_mrp_report.paperformat_a4_without_header" />          
+        <field name="paperformat_id" ref="cdp_mrp_report.cds_paperformat_a4_custom" />          
     </record>
 
 

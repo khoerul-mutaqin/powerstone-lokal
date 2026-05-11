@@ -170,49 +170,76 @@
                                     <strong>层数</strong>
                                 </td>
                                 <td rowspan="3" class="center-header-orange-9">
-                                    <strong>涂液<br/>代码</strong>
+                                    <strong>涂液
+                                        <br/>代码
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-orange-9">
-                                    <strong>烧结<br/>程序</strong>
+                                    <strong>烧结
+                                        <br/>程序
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-orange-9">
-                                    <strong>涂层<br/>位置</strong>
+                                    <strong>涂层
+                                        <br/>位置
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-orange-9">
                                     <strong>涂覆面</strong>
                                 </td>
                                 <td rowspan="3" class="center-header-orange-9">
-                                    <strong>单片<br/>面积<br/>(m2)</strong>
+                                    <strong>单片
+                                        <br/>面积
+                                        <br/>(m2)
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-orange-9">
-                                    <strong>单片指<br/>导用量</strong>
+                                    <strong>单片指
+                                        <br/>导用量
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-orange-9">
-                                    <strong>单层涂<br/>液用量</strong>
+                                    <strong>单层涂
+                                        <br/>液用量
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>涂覆<br/>日期</strong>
+                                    <strong>涂覆
+                                        <br/>日期
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>涂覆<br/>班次</strong>
+                                    <strong>涂覆
+                                        <br/>班次
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
                                     <strong>涂覆组</strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>涂覆<br/>人数</strong>
+                                    <strong>涂覆
+                                        <br/>人数
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>辅助<br/>人数</strong>
+                                    <strong>辅助
+                                        <br/>人数
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>涂覆<br/>开始时间</strong>
+                                    <strong>涂覆
+                                        <br/>开始时间
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>涂覆<br/>结束时间</strong>
+                                    <strong>涂覆
+                                        <br/>结束时间
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>计划烧结<br/>开始时间</strong>
+                                    <strong>计划烧结
+                                        <br/>开始时间
+                                    </strong>
                                 </td>
                                 <!--Q - U -->
                                 <td colspan="5" class="center-header-gray-9">
@@ -223,22 +250,34 @@
                                     <strong>总工时</strong>
                                 </td>
                                 <td rowspan="3" class="center-header-gray-9">
-                                    <strong>人效<br/>(m2/人/时)</strong>
+                                    <strong>人效
+                                        <br/>(m2/人/时)
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>当班<br/>架次</strong>
+                                    <strong>当班
+                                        <br/>架次
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>烧结<br/>程序</strong>
+                                    <strong>烧结
+                                        <br/>程序
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>计划烧结<br/>开始时间</strong>
+                                    <strong>计划烧结
+                                        <br/>开始时间
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>实际烧结<br/>开始时间</strong>
+                                    <strong>实际烧结
+                                        <br/>开始时间
+                                    </strong>
                                 </td>
                                 <td rowspan="3" class="center-header-9">
-                                    <strong>实际烧结<br/>结束时间</strong>
+                                    <strong>实际烧结
+                                        <br/>结束时间
+                                    </strong>
                                 </td>
                                 <!--AC - AE -->
                                 <td colspan="3" rowspan="2" class="center-header-9">
@@ -275,10 +314,14 @@
                                 </td>
                                 <!--AC - AE detail -->
                                 <td class="center-header-9">
-                                    <strong>料架号<br/>变更</strong>
+                                    <strong>料架号
+                                        <br/>变更
+                                    </strong>
                                 </td>
                                 <td class="center-header-9">
-                                    <strong>数量<br/>变更</strong>
+                                    <strong>数量
+                                        <br/>变更
+                                    </strong>
                                 </td>
                                 <td class="center-header-9">
                                     <strong>异常备注</strong>
@@ -321,12 +364,12 @@
                                         <t t-esc="val2"/>
                                     </td>
                                     <td class="center-header-9">
-                                      <t t-set="ratio" t-value="0"/>
-                                      <t t-if="val1">
-                                          <t t-set="ratio" t-value="val2 / val1"/>
+                                        <t t-set="ratio" t-value="0"/>
+                                        <t t-if="val1">
+                                            <t t-set="ratio" t-value="val2 / val1"/>
                                       </t>
-                                      <t t-if="ratio &gt; 0">
-                                        <t t-esc="round(ratio, 3)"/>
+                                        <t t-if="ratio &gt; 0">
+                                            <t t-esc="round(ratio, 3)"/>
                                       </t>
                                     </td>
                                     <!-- NORMAL -->
